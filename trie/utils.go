@@ -28,8 +28,8 @@ func BlackTrie() *Trie {
 		blackTrie = NewTrie()
 		blackTrie.CheckWhiteList = true
 
-		loadDict(blackTrie, "add", "../dicts/black/default")
-		loadDict(blackTrie, "del", "../dicts/black/exclude")
+		loadDict(blackTrie, "add", "./dicts/black/default")
+		loadDict(blackTrie, "del", "./dicts/black/exclude")
 	}
 	return blackTrie
 }
@@ -38,7 +38,7 @@ func BlackTrie() *Trie {
 func WhitePrefixTrie() *Trie {
 	if whitePrefixTrie == nil {
 		whitePrefixTrie = NewTrie()
-		loadDict(whitePrefixTrie, "add", "../dicts/white/prefix")
+		loadDict(whitePrefixTrie, "add", "./dicts/white/prefix")
 	}
 	return whitePrefixTrie
 }
@@ -52,7 +52,7 @@ func ClearWhitePrefixTrie() {
 func WhiteSuffixTrie() *Trie {
 	if whiteSuffixTrie == nil {
 		whiteSuffixTrie = NewTrie()
-		loadDict(whiteSuffixTrie, "add", "../dicts/white/suffix")
+		loadDict(whiteSuffixTrie, "add", "./dicts/white/suffix")
 	}
 	return whiteSuffixTrie
 }

@@ -1,4 +1,4 @@
-package main
+package wordfilter
 
 import (
 	"encoding/json"
